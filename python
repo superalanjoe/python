@@ -1,0 +1,100 @@
+Tipo de dado: none
+Método input()
+Operadores aritméticos (+,-,*,/)
+Operadores aritméticos especiais
+Operadores de atribuição
+
+variavelNula = None
+print(variavelNula)
+print(type(variavelNula))
+
+nomeUsuario = input("Informe seu nome: ")
+idadeUsuario = input("Informe sua idade: ")
+cidadeUsuario = input("Informe sua cidade: ")
+
+print(type(nomeUsuario))
+print(idadeUsuario)
+print(cidadeUsuario)
+
+numero1 = 5
+numero2 = 3
+
+# OPERADORES BÁSICOS
+
+# resultadoSoma = 10 + 8 + 6 + 5.5
+resultadoSoma = numero1 + numero2
+print("resultado da soma ", resultadoSoma)
+
+resultadoSubstracao = numero1 - numero2
+print(f"resultado da subtração {resultadoSubstracao} !!!")
+
+print(f"resultado da multiplicação {numero1 * numero2} !!!")
+
+resultadoDivisao = numero1 / numero2
+print(f"Resultado da divisão {round(resultadoDivisao,1)}")
+print("Resultado da divisão {:.1f} ".format(resultadoDivisao))
+
+# OPERADORES ESPECIAIS
+
+divisaoInteira = numero1 // numero2 # retorna 1
+print(divisaoInteira)
+
+restoDivisao = 10 % numero1 # retorna 0
+print(restoDivisao)
+
+exponenciacao = numero1 ** 2
+print(exponenciacao)
+
+#ORDEM DE PRECEDÊNCIA
+print(10 + 5 * 2)
+print(int((10 + 5) * 2 + 20 / 5))
+
+listaNumeros = [1,2,3] * 5
+print(listaNumeros)
+
+frutasVermelhas = ["morango", "maça"]
+frutasVerdes = ["uva", "melancia"]
+frutasCompletas = frutasVermelhas + frutasVerdes
+
+frutasCompletas.extend(["banana", "jaca"])
+
+print(frutasCompletas)
+
+#EXPLORANDO FORMAT STRING
+print("numero %s" % 13.5)
+print("Controlando as {0} {1} {2}".format("ordens", "dos", "valores"))
+
+acumulador = 3
+
+#acumulador = acumulador + 2
+acumulador += 2
+print(acumulador)
+acumulador -= 2
+print(acumulador)
+acumulador *= 2
+print(acumulador)
+acumulador /= 2
+print(acumulador)
+acumulador %= 2
+print(acumulador)
+acumulador //= 2
+print(acumulador)
+acumulador **= 2
+print(acumulador)
+
+x = 5
+x += 5
+print(x)
+
+# algoritmo para informar quanto o usuário pode ter de despesa do salario
+
+"""
+  - solicitar as informações para o usuário
+  - processar o dado
+  - apresentar o retorno para o usuário
+"""
+
+salario = input("Informe o seu salário:")
+limiteDespesa = 0.4 * float(salario)
+
+print(f"Com salário de R${salario} o seu limite de despesa é R${limiteDespesa}")
